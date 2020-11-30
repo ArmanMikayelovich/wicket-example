@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+    <meta charset="UTF-8">
+    <title>Cheesr - Making cheese taste beta</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">...</div>
+        <div id="contents">
+            <div id="main">
+                <div class="cheese" wicket:id="cheeses">
+                    <h3 wicket:id="name">Gauda</h3>
+                    <p wicket:id="description">Gauda is a Dutch...</p>
+                    <p>
+                        <span wicket:id="price">$1.99</span>
+                        <a href="#" wicket:id="add">add to card</a>
+                    </p>
+                </div>
+                <div wicket:id="navigator"></div>
+
+                <wicket:remove>
+                    <div class="cheese">
+                        <h3>Emmental</h3>
+                        <p>Emmental is a Swiss che..</p>
+                        <p>
+                            <span>$2.99</span>
+                            <a href="#">add to cart</a>
+                        </p>
+                    </div>
+                </wicket:remove>
+            </div>
+            <div id="cart">
+                <h3>Your selection</h3>
+                <table>
+                    <tbody>
+                    <tr wicket:id="cart">
+                        <td wicket:id="name">Gaude</td>
+                        <td wicket:id="price">$2.99</td>
+                        <td wicket:id="description">$2.99</td>
+                        <td><a href="#" wicket:id="remove">remove</a></td>
+                    </tr>
+                    <wicket:remove>
+                        <tr>
+                            <td>Emmental</td>
+                            <td>$1.99</td>
+                            <td><a href="#">remove</a></td>
+                        </tr>
+                    </wicket:remove>
+                    </tbody>
+                    <tfoot>
+                    <tr class="total">
+                        <th>Total</th>
+                        <td wicket:id="total">$1.99</td>
+                    </tr>
+                    </tfoot>
+                </table>
+                <input type="button" wicket:id="checkout" value="Check out" />
+
+            </div> <!--Cart-->
+        </div><!--Content-->
+    </div><!--Container-->
+
+</body>
+</html>

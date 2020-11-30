@@ -1,12 +1,13 @@
 package com.mikayelovich;
 
+import com.mikayelovich.links.HomePage;
 import junit.framework.TestCase;
 import org.apache.wicket.util.tester.WicketTester;
 
 /**
  * Simple test using the WicketTester
  */
-public class TestHomePage extends TestCase
+public class TestInputsPage extends TestCase
 {
 	private WicketTester tester;
 

@@ -1,4 +1,4 @@
-package com.mikayelovich;
+package com.mikayelovich.links;
 
 import org.apache.wicket.Component;
 import org.apache.wicket.PageParameters;
