@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+<wicket:panel>
+    <h3>Your selection</h3>
+    <table>
+        <tbody>
+        <tr wicket:id="cart">
+            <td wicket:id="name">Gouda</td>
+            <td wicket:id="description">Gouda</td>
+            <td wicket:id="price">2.99</td>
+            <td ><a href="#" wicket:id="remove">remove</a> </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr class="total">
+            <th>Total</th>
+            <td wicket:id="total">$1.99</td>
+            <td>&nbsp;</td>
+        </tr>
+        </tfoot>
+    </table>
+</wicket:panel>
+</body>
+</html>

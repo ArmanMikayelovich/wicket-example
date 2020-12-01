@@ -1,6 +1,7 @@
 package com.mikayelovich.cheesr.pages;
 
 import com.mikayelovich.cheesr.model.Cheese;
+import com.mikayelovich.cheesr.panel.ShoppingCartPanel;
 import org.apache.wicket.behavior.HeaderContributor;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Button;
@@ -21,17 +22,7 @@ public class Index extends CheesrHomePage {
 
         add(cheesesListView);
         add(new PagingNavigator("navigator", cheesesListView));
-        final ListView cartListView = getCartListView();
-
-        add(cartListView);
-        add(new Label("total", new Model() {
-            @Override
-            public Object getObject() {
-                NumberFormat nf = NumberFormat.getCurrencyInstance();
-                return nf.format(getCart().getTotal());
-            }
-        }));
-
+        add(new ShoppingCartPanel("shoppingcart", getCart()));
         add(new Link("checkout") {
             @Override
             public void onClick() {
@@ -63,22 +54,4 @@ public class Index extends CheesrHomePage {
         };
     }
 
-    private ListView getCartListView() {
-        return new ListView("cart", new PropertyModel(this, "cart.cheeses")) {
-            @Override
-            protected void populateItem(ListItem item) {
-                final Cheese cheese = (Cheese) item.getModelObject();
-                item.add(new Label("name", cheese.getName()));
-                item.add(new Label("description", cheese.getDescription()));
-                item.add(new Label("price", "$" + cheese.getPrice()));
-                item.add(new Link("remove", item.getModel()) {
-                    @Override
-                    public void onClick() {
-                        Cheese selected = (Cheese) getModelObject();
-                        getCart().getCheeses().remove(selected);
-                    }
-                });
-            }
-        };
-    }
 }
