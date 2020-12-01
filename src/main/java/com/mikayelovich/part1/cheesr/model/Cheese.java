@@ -1,4 +1,4 @@
-package com.mikayelovich.cheesr.model;
+package com.mikayelovich.part1.cheesr.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

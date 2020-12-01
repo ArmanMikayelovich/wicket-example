@@ -1,19 +1,13 @@
-package com.mikayelovich.cheesr.pages;
+package com.mikayelovich.part1.cheesr.pages;
 
-import com.mikayelovich.cheesr.model.Cheese;
-import com.mikayelovich.cheesr.panel.ShoppingCartPanel;
+import com.mikayelovich.part1.cheesr.model.Cheese;
+import com.mikayelovich.part1.cheesr.panel.ShoppingCartPanel;
 import org.apache.wicket.behavior.HeaderContributor;
 import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
-import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.markup.html.list.PageableListView;
 import org.apache.wicket.markup.html.navigation.paging.PagingNavigator;
-import org.apache.wicket.model.Model;
-import org.apache.wicket.model.PropertyModel;
-
-import java.text.NumberFormat;
 
 public class Index extends CheesrHomePage {
     public Index() {

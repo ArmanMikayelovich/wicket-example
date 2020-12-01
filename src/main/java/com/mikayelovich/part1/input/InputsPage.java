@@ -1,4 +1,4 @@
-package com.mikayelovich.input;
+package com.mikayelovich.part1.input;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;

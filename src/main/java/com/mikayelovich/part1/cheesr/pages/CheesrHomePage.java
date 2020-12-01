@@ -1,9 +1,9 @@
-package com.mikayelovich.cheesr.pages;
+package com.mikayelovich.part1.cheesr.pages;
 
-import com.mikayelovich.cheesr.CheesrApplication;
-import com.mikayelovich.cheesr.model.Cart;
-import com.mikayelovich.cheesr.model.Cheese;
-import com.mikayelovich.cheesr.session.CheesrSession;
+import com.mikayelovich.part1.cheesr.CheesrApplication;
+import com.mikayelovich.part1.cheesr.model.Cart;
+import com.mikayelovich.part1.cheesr.model.Cheese;
+import com.mikayelovich.part1.cheesr.session.CheesrSession;
 import org.apache.wicket.markup.html.WebPage;
 
 import java.util.List;

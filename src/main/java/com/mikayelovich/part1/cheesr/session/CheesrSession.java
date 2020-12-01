@@ -1,6 +1,6 @@
-package com.mikayelovich.cheesr.session;
+package com.mikayelovich.part1.cheesr.session;
 
-import com.mikayelovich.cheesr.model.Cart;
+import com.mikayelovich.part1.cheesr.model.Cart;
 import lombok.Getter;
 import org.apache.wicket.Request;
 import org.apache.wicket.protocol.http.WebSession;

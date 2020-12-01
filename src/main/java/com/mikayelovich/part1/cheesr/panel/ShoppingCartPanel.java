@@ -1,7 +1,7 @@
-package com.mikayelovich.cheesr.panel;
+package com.mikayelovich.part1.cheesr.panel;
 
-import com.mikayelovich.cheesr.model.Cart;
-import com.mikayelovich.cheesr.model.Cheese;
+import com.mikayelovich.part1.cheesr.model.Cart;
+import com.mikayelovich.part1.cheesr.model.Cheese;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;

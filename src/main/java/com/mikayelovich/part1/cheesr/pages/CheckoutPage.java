@@ -1,7 +1,7 @@
-package com.mikayelovich.cheesr.pages;
+package com.mikayelovich.part1.cheesr.pages;
 
-import com.mikayelovich.cheesr.model.Address;
-import com.mikayelovich.cheesr.model.Cart;
+import com.mikayelovich.part1.cheesr.model.Address;
+import com.mikayelovich.part1.cheesr.model.Cart;
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.FormComponent;

@@ -1,6 +1,6 @@
 package com.mikayelovich;
 
-import com.mikayelovich.links.HomePage;
+import com.mikayelovich.part1.links.HomePage;
 import junit.framework.TestCase;
 import org.apache.wicket.util.tester.WicketTester;
 

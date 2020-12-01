@@ -1,6 +1,5 @@
-package com.mikayelovich.links;
+package com.mikayelovich.part1.links;
 
-import org.apache.wicket.Component;
 import org.apache.wicket.PageParameters;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxFallbackLink;

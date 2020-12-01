@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Current Time <span wicket:id="clock">time</span>
+    <br/>
+    <a href="#" wicket:id="refresh">refresh</a>
+
+    <div>
+        <form wicket:id="form">
+            <input wicket:id="name" name="name" type="text">
+            <input wicket:id="address.street" name="address" type="text">
+            <input type="submit" name="submit" wicket:id="submit">
+        </form>
+    </div>
+</body>
+</html>
