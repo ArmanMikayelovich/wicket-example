@@ -22,9 +22,5 @@ public class MyForm extends Form {
 
     @Override
     protected void onSubmit() {
-//        Customer customer = (Customer) getModelObject();
-//        Address address = customer.getAddress();
-//        System.out.println(address);
-
     }
 }
