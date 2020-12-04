@@ -13,7 +13,8 @@ import org.apache.wicket.markup.html.link.ExternalLink;
 
 public class TestPage extends WebPage {
     public TestPage() {
-        add(new BookmarkablePageLink("chapter8", com.mikayelovich.part3.chapter9.TestPage.class));
+        add(new BookmarkablePageLink("chapter10", com.mikayelovich.part3.chapter10.ClockPage.class));
+        add(new BookmarkablePageLink("chapter9", com.mikayelovich.part3.chapter9.TestPage.class));
 
         add(new Label("simpleLabel", "first text"));
         add(new MultiLineLabel("multilineLabel", "Fusce vel congue dui, quis egestas eros. Donec luctus bibendum purus.\n" +

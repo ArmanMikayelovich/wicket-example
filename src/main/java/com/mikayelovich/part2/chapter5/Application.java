@@ -10,4 +10,9 @@ public class Application extends WebApplication {
         return TestPage.class;
     }
 
+    public static Application getInstance() {
+        return (Application) org.apache.wicket.Application.get();
+    }
+
+
 }

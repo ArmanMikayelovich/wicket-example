@@ -1,9 +1,9 @@
 package com.mikayelovich.part1.cheesr;
 
-import com.mikayelovich.part1.Application;
 import com.mikayelovich.part1.cheesr.model.Cheese;
 import com.mikayelovich.part1.cheesr.pages.Index;
 import com.mikayelovich.part1.cheesr.session.CheesrSession;
+import org.apache.wicket.Application;
 import org.apache.wicket.Request;
 import org.apache.wicket.Response;
 import org.apache.wicket.Session;

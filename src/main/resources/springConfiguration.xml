@@ -1,0 +1,24 @@
+
+<bean id="dataSource"
+      class="com.mchange.v2.c3p0.ComboPooledDataSource">
+    <property name="driverClass"/>
+    <value>${jdbc.driver}</value>
+</bean>
+
+<bean id="sessionFactory"
+      class="org.springframework.orm.hibernate3.annotation.
+AnnotationSessionFactoryBean">
+<property name="dataSource">
+    <ref bean="dataSource"/>
+</property>
+...
+</bean>
+<bean id="DiscountDao"
+      class="dbdiscounts.dao.hibernate.DiscountDaoImpl">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+
+<bean id="DiscountsService"
+      class="dbdiscounts.services.DiscountsServiceImpl">
+<property name="discountDao" ref="DiscountDao"/>
+</bean>

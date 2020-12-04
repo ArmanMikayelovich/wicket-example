@@ -1,5 +1,6 @@
 package com.mikayelovich.part1;
 
+import com.mikayelovich.part1.cheesr.CheesrApplication;
 import com.mikayelovich.part1.input.InputsPage;
 import org.apache.wicket.*;
 import org.apache.wicket.protocol.http.WebApplication;
@@ -19,5 +20,7 @@ public class Application extends WebApplication {
         return InputsPage.class;
     }
 
-
+    public static Application get() {
+        return (Application) Application.get();
+    }
 }
